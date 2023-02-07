@@ -16,8 +16,23 @@ p{
     font-weight: 400;
     font-size: 1rem;
 }
-.logo img{
+ul li{
+    color: white;
+    list-style-type: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+input, button{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.logo1 img{
     width: 11rem;
+}
+.logo2 img{
+    width: 6.75rem;
 }
 nav{
     display: flex;
@@ -125,4 +140,33 @@ nav{
 .profile{
     display: flex;
     align-items: center;
+}
+.early_section{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.early_container{
+    width: 53.9375rem;
+    background-color: hsl(217, 28%, 15%);
+}
+.footer_container{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+}
+.footer_para{
+    width: 21.1875rem;
+}
+.location_container{
+    display: flex;
+}
+.phone_container{
+    display: flex;
+}
+.email_container{
+    display: flex;
+}
+footer{
+    background-color: hsl(216, 53%, 9%);
 }
