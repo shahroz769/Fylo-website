@@ -9,12 +9,17 @@ h1,h2,h3,h4{
     font-family: 'Raleway', sans-serif;
     color: white;
     font-weight: 700;
+    cursor: default;
 }
 p{
     font-family: 'Open Sans', sans-serif;
     color: white;
     font-weight: 400;
     font-size: 1rem;
+    cursor: default;
+}
+.social img{
+    cursor: pointer;
 }
 ul li{
     color: white;
@@ -41,7 +46,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 5rem;
+    margin: 2rem 5rem 5rem 5rem;
 }
 .nav_links a:not(:nth-child(1)){
     margin-left: 4rem;
@@ -159,6 +164,9 @@ nav{
     background-color: hsl(219, 30%, 18%);
     border-radius: 0.33rem;
 }
+.quotes p{
+    font-size: 0.9rem;
+}
 .profile_img{
     width: 1.5rem;
     height: 1.5rem;
@@ -218,8 +226,7 @@ nav{
 }
 .footer_container{
     display: flex;
-    justify-content: center;
-    gap: 5rem;
+    justify-content: space-between;
 }
 .footer_para{
     width: 21.1875rem;
@@ -235,6 +242,9 @@ nav{
 }
 footer{
     background-color: hsl(216, 53%, 9%);
+}
+button{
+    cursor: pointer;
 }
 .early_section button{
     color: white;
@@ -254,6 +264,7 @@ footer{
 }
 footer{
     padding-top: 11rem;
+    padding-bottom: 5rem;
 }
 .location_container{
     display: flex;
@@ -288,6 +299,6 @@ ul{
 .footer_combined{
     display: flex;
     flex-direction: column;
-    margin: 0 10rem;
+    margin: 0 10rem !important;
     gap: 3rem;
 }
