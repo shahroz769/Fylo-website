@@ -27,9 +27,12 @@ input, button{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    outline: none;
+    border: none;
 }
 .logo1 img{
     width: 11rem;
+    padding: 2rem 0;
 }
 .logo2 img{
     width: 6.75rem;
@@ -64,6 +67,19 @@ nav{
 .intro h1{
     font-size: 2rem;
     text-align: center;
+    line-height: 3rem;
+    padding: 2rem 0;
+}
+.intro p{
+    width: 33.698125rem;
+    padding: 0 0 1.5rem 0;
+}
+.intro button{
+    color: white;
+    background: linear-gradient(45deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%) 100%);
+    width: 17.5rem;
+    padding: 1rem 3rem;
+    border-radius: 3rem;
 }
 .features p, .intro p{
     text-align: center;
@@ -79,23 +95,25 @@ nav{
     column-gap: 11.375rem;
     row-gap: 5rem;
     flex-wrap: wrap;
+    margin: 10rem 0;
 }
 .features{
     width: 21.8125rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 .features h3{
     font-size: 1.125rem;
     text-align: center;
+    margin: 1.5rem 0 0.5rem 0;
 }
 .productive_section{
     display: flex;
     justify-content: center;
     align-items: center;
-    row-gap: 5rem;
+    gap: 5rem;
+    margin: 0 0 10rem 0;
 }
 .productive_para{
     width: 35.1875rem;
@@ -103,17 +121,27 @@ nav{
 .productive_para h1{
     font-size: 2rem;
 }
+.productive_para p{
+    padding: 1rem 0;
+}
 .productive_para a{
-    text-decoration: underline;
+    text-decoration: none;
     color: hsl(176, 68%, 64%);
     font-family: 'Raleway', sans-serif;
     font-weight: 400;
     font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 2px solid hsl(176, 68%, 64%);
+    width: max-content;
+    padding-bottom: 0.25rem;
 }
 .quotes1 .pic{
     position: absolute;
     z-index: -10;
-    top: -30px;
+    top: -35px;
+    left: -10px;
 }
 .quotes1 {
     position: relative;
@@ -123,9 +151,13 @@ nav{
     justify-content: center;
     gap: 2.5rem;
 }
+.firstp{
+    padding: 3rem 2rem 2rem 2rem;
+}
 .quotes{
     width: 22.5rem;
     background-color: hsl(219, 30%, 18%);
+    border-radius: 0.33rem;
 }
 .profile_img{
     width: 1.5rem;
@@ -140,15 +172,49 @@ nav{
 .profile{
     display: flex;
     align-items: center;
+    padding: 0 0.2rem 1.5rem 2rem !important;
+    align-items: center;
+}
+.profile_name h4{
+    padding: 0 0 0.25rem 0.5rem;
+    font-size: 0.625rem;
+}
+.profile_name p{
+    padding: 0 0 0rem 0.5rem;
+    font-size: 0.5rem;
 }
 .early_section{
     display: flex;
     justify-content: center;
+}
+.early_container_top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.early_container h1{
+    margin: 3rem 0 1.5rem 0;
+}
+.early_container p{
+    width: 40.625rem;
     text-align: center;
 }
 .early_container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
     width: 53.9375rem;
     background-color: hsl(217, 28%, 15%);
+    border-radius: 0.66rem;
+    margin-top: 2rem;
+    position: relative;
+    top: 8rem;
+}
+.early_container_bottom{
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 3rem;
 }
 .footer_container{
     display: flex;
@@ -169,4 +235,59 @@ nav{
 }
 footer{
     background-color: hsl(216, 53%, 9%);
+}
+.early_section button{
+    color: white;
+    background: linear-gradient(45deg, hsl(176, 68%, 64%), hsl(198, 60%, 50%) 100%);
+    width: 12.5rem;
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+}
+.early_section input{
+    width: 30rem;
+    padding: 1rem 1rem;
+    border-radius: 3rem;
+    border: none;
+    outline: none;
+}
+footer{
+    padding-top: 11rem;
+}
+.location_container{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.contact_container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.phone_container{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.email_container{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.social{
+    display: flex;
+    gap: 0.5rem;
+}
+.footer_combined{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10rem;
+    gap: 3rem;
 }
