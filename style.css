@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
 }
+::-webkit-scrollbar {
+    display: none;
+}
 body{
     background-color: hsl(218, 28%, 13%);
 }
